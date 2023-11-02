@@ -13,6 +13,9 @@
 --color-blue: #03e8f9;
 --color-orange: #fd6413;
 --color-gray: #1b1e26;
+
+/* Size */
+--size-max-width: 1200px;
 }
 
 *{
@@ -52,6 +55,11 @@ button:focus{
 .section{
     padding: 4rem;
     text-align: center;
+}
+
+.max-container{
+    max-width: var(--size-max-width);
+    margin: auto;
 }
 
 .title{
@@ -110,7 +118,7 @@ button:focus{
 }
 
 /* Home */
-#Home{
+#home{
     background-color: var(--color-primary);
     color: var(--color-text);
     padding: 5rem 1rem;
@@ -151,4 +159,58 @@ button:focus{
     background-color: transparent;
     color: var(--color-text);
     outline: 2px solid var(--color-accent);
+}
+
+/* about */
+.majors{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2.5em 0;
+}
+
+.major{
+    background-color: var(--color-primary-variant);
+    padding: 2rem 1rem;
+    color: var(--color-text);
+    border-radius: 1rem;
+    cursor: default;
+    box-shadow: 0px 10px 1px rgba(221, 221, 221, 1), 0 10px 20px rgba(204, 204, 204, 1);
+}
+
+.major__icon{
+    font-size: 4rem;
+    margin: 1rem 0;
+    color: var(--color-accent);
+    transition: all 300ms ease;
+}
+
+.major__title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.major:hover .major__icon {
+    transform: rotate(-15deg) scale(1.2);
+}
+
+.jobs{
+    text-align: start;
+}
+
+.job{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 1rem;
+}
+
+.job__name{
+    color: var(--color-primary);
+}
+
+.job__period{
+    color: var(--color-primary);
+    font-size: 0.8rem;
 }
