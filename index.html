@@ -32,29 +32,33 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- javascript -->
-    <script src="mainJs.js" defer></script>
+    <script type="module" src="src/mainJs.js" defer></script>
+    <script type="module" src="src/projects.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="header__logo">
-        <img src="src/favicon.ico" alt="logo" class="header__logo__img" />
+        <img src="Images/favicon.ico" alt="logo" class="header__logo__img" />
         <h2 class="heaer__logo__title">
           <a href="#">Brandon's Porfolio</a>
         </h2>
       </div>
       <nav class="header__nav">
         <ul class="header__menu">
-          <li><a class="header__menu__item active" href="#Home">Home</a></li>
-          <li><a class="header__menu__item" href="#About">About</a></li>
-          <li><a class="header__menu__item" href="#Skills">Skills</a></li>
-          <li><a class="header__menu__item" href="#Work">Work</a></li>
+          <li><a class="header__menu__item active" href="#home">Home</a></li>
+          <li><a class="header__menu__item" href="#about">About</a></li>
+          <li><a class="header__menu__item" href="#skills">Skills</a></li>
+          <li><a class="header__menu__item" href="#work">Work</a></li>
           <li>
-            <a class="header__menu__item" href="#Testimonials">Testimonials</a>
+            <a class="header__menu__item" href="#testimonials">Testimonials</a>
           </li>
-          <li><a class="header__menu__item" href="#Contact">Contact</a></li>
+          <li><a class="header__menu__item" href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <button class="header__toggle" aria-label="navigation menu toggle">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
     <!-- Main -->
     <main>
@@ -62,7 +66,7 @@
       <section id="home">
         <div class="home__container">
           <img
-            src="src/프사.png"
+            src="Images/프사.png"
             class="home__avatar"
             alt="Brandon's profile"
           />
@@ -106,7 +110,7 @@
         <ul class="jobs">
           <li class="job">
             <img
-              src="src/seoultech.jpeg"
+              src="Images/seoultech.jpeg"
               alt="seoultech logo"
               width="100px"
               height="100px"
@@ -118,7 +122,7 @@
           </li>
           <li class="job">
             <img
-              src="src/paichai.jpeg"
+              src="Images/paichai.jpeg"
               alt="paichai logo"
               width="100px"
               height="100px"
@@ -223,7 +227,7 @@
             <li class="project">
               <a href="#" target="_blank">
                 <img
-                  src="/portfolio_site/src/Images/project1.webp"
+                  src="Images/project1.webp"
                   alt="project1"
                   class="project__img"
                 />
@@ -236,7 +240,7 @@
             <li class="project">
               <a href="#" target="_blank">
                 <img
-                  src="src/Images/project1.webp"
+                  src="Images/project1.webp"
                   alt="project2"
                   class="project__img"
                 />
@@ -249,7 +253,7 @@
             <li class="project">
               <a href="#" target="_blank">
                 <img
-                  src="src/Images/project1.webp"
+                  src="Images/project1.webp"
                   alt="project3"
                   class="project__img"
                 />
@@ -262,7 +266,7 @@
             <li class="project">
               <a href="#" target="_blank">
                 <img
-                  src="src/Images/project1.webp"
+                  src="Images/project1.webp"
                   alt="project4"
                   class="project__img"
                 />
@@ -282,7 +286,7 @@
         <ul class="testimonials">
           <li class="testimonial">
             <img
-              src="src/Images/project1.webp"
+              src="Images/project1.webp"
               alt="people1"
               class="testimonial__img"
             />
@@ -301,7 +305,7 @@
           </li>
           <li class="testimonial">
             <img
-              src="src/Images/project2.webp"
+              src="Images/project2.webp"
               alt="people2"
               class="testimonial__img"
             />
@@ -319,7 +323,7 @@
           </li>
           <li class="testimonial">
             <img
-              src="src/Images/project3.webp"
+              src="Images/project3.webp"
               alt="people3"
               class="testimonial__img"
             />
